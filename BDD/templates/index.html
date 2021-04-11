@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Plombier</title>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/static/css/bootstrap.css">
+	<link rel="stylesheet" href="/static/css/main.css">
+	<link rel="stylesheet" href="/static/css/jquery.bxslider.css">
+	<script src="/static/js/modernizr.custom.js"></script>
+</head>
+
+<body>
+	<div class="loader">
+		<div class="project-loader">
+			<div class="bubblingG">
+				<span id="bubblingG_1"></span>
+				<span id="bubblingG_2"></span>
+				<span id="bubblingG_3"></span>
+			</div>
+		</div>
+	</div>
+	<div class="loading" id="wrapper">
+		<!-- Fixed navbar -->
+		<div class="navbar navbar-smak navbar-fixed-top " id="navbar" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse"
+						data-target=".navbar-collapse"></button>
+						<h3>Ceci est un exemple de site, nous pouvons le personnaliser à l'image de votre entreprise</h3>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right animate">
+						<li><a href="#home">Accueil</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">A propos</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+		<div style="position: fixed; z-index: -99; width: 100%; height: 100%"></div>
+		<section id="home" class="home home-fullscreen">
+			<div class="slide text-slider-wrapper">
+				<div class="container">
+					<span class="lead">Votre plombier - {{ data.societe}}</span>
+					<a href="#contact" class="btn btn-primary outline-outward">Nous contacter</a>
+				</div>
+			</div>
+			<a href="#services" class="go-to godown">
+				<span>
+					<span class="fa fa-angle-double-down fa-2x"></span>
+					<span class="fa fa-angle-double-down fa-2x"></span>
+					<span class="fa fa-angle-double-down fa-2x"></span>
+					<span class="fa fa-angle-double-down fa-2x"></span>
+				</span>
+			</a>
+		</section>
+		<section id="services" class="gray">
+			<div class="container pad-bot-50">
+				<div class="heading">
+					<div>Nos services</div>
+					<h1>Notre savoir-faire</h1>
+					<div class="divider"><span></span></div>
+					<p>Nous mettons à votre disposition toute notre expertise pour vous offrir le meilleur service</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="service-item fadeInDown">
+							<img src="/static/img/bathtub.png" alt="">
+							<h3>Installation</h3>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="service-item fadeInDown">
+							<img src="/static/img/tools.png" alt="">
+							<h3>Rénovation</h3>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="service-item fadeInDown">
+							<img src="/static/img/siren.png" alt="">
+							<h3>Dépannage</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="branded-section process">
+				<div class="masked">
+					<div class="container">
+						<div class="heading">
+							<h3 class="primary-color">Pourquoi choisir {{ data.societe}} ?</h3>
+						</div>
+						<div class="row">
+							<div class="col-sm-2">
+								<div class="process-item ">
+									<img src="/static/img/phone-call.png" alt="">
+									<h3>RÉACTIVITÉ EXEMPLAIRE</h3>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="process-item delay1">
+									<img src="/static/img/customer-review.png" alt="">
+									<h3>SUIVI CLIENTÈLE</h3>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="process-item delay2">
+									<img src="/static/img/helmet.png" alt="">
+									<h3>EXPERTISE</h3>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="process-item delay3">
+									<img src="/static/img/technical-support.png" alt="">
+									<h3>GRANDE OFFRE DE PRESTATIONS</h3>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="process-item delay4">
+									<img src="/static/img/clock.png" alt="">
+									<h3>DEPLACEMENT RAPIDE</h3>
+								</div>
+							</div>
+							<div class="col-sm-2">
+								<div class="process-item delay5">
+									<img src="/static/img/best-price.png" alt="">
+									<h3>TARIFS TRES ATTRACTIFS</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="heading">
+					<h1>Qui sommes-nous ?</h1>
+					<div class="divider">
+						<span></span>
+					</div>
+					<p>Nous sommes des experts dans le domaine de la plomberie (débouchage, fuites,
+						assainissement,
+						chauffe-eau ...), depuis plus de 15 ans. Nous intervenons dans toute la région
+						7 jours sur 7 et 24 heures sur 24. Du simple dépannage à l'intervention d'urgence, nous
+						garantissons un service continu afin de régler vos problèmes de plomberie. Tous nos
+						clients
+						sont satisfaits de nos prestations et nous recommandent auprès de leurs proches.</p>
+					<div class="team col">
+						<img src="/static/img/team.jpeg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="contact" class="gray">
+			<div class="container">
+				<div class="heading">
+					<div>Nous contacter</div>
+					<h2>Un problème de plomberie ? Une urgence ?</h2>
+					<h2> Contactez-nous vite !</h2>
+					<div class="divider">
+						<span></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 adress-element ">
+						<h3>Adresse</h3>
+						<span class="font-l">{{ data.adresse }}, {{ data.ville}}</span>
+					</div>
+					<div class="col-md-4 adress-element delay2">
+						<h3>Mail</h3>
+						<span class="font-l">{{ data.mail}}</span>
+					</div>
+					<div class="col-md-4 adress-element delay4">
+						<h3>Téléphone</h3>
+						<span class="font-l">{{ data.telephone}}</span>
+					</div>
+				</div>
+			</div>
+			<div class="branded-section contact-form">
+				<div class="masked">
+					<div class="container">
+						<div class="heading">
+							<h1 class="light-font">Envoyez nous un message</h1>
+							<p class="light-font"> Besoin d'un devis ou information à nous demander ?</p>
+						</div>
+						<form class="form-horizontal">
+							<div class="form-group">
+								<div class="col-sm-4" style="position:relative">
+									<input type="text" name="name" data-new-placeholder="Quesl est votre nom ?"
+										class="form-control label_better" placeholder="Nom">
+								</div>
+								<div class="col-sm-4">
+									<input type="text" name="Email" class="form-control label_better"
+										placeholder="Email">
+								</div>
+								<div class="col-sm-4">
+									<input type="text" name="Phone" class="form-control label_better"
+										placeholder="Téléphone">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<textarea class="form-control label_better" placeholder="Votre message"
+										rows="7"></textarea>
+								</div>
+							</div>
+							<div class="form-group commands">
+								<button class="btn btn-primary">Envoyer</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<p>&copy; Copyright <a href="https://digitizz.fr">Digitizz.fr</a> 2021
+				</p>
+				<a href="#home" class="square-l goup" style="position: relative">
+					<span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+						<span class="fa fa-angle-double-up fa-2x"></span>
+					</span>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<!-- Load all jsavascrip files -->
+	<script type="text/javascript" src="/static/js/jquery.js"></script>
+	<script type="text/javascript" src="/static/js/bootstrap.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.bxslider.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.label_better.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.mixitup.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.easypiechart.js"></script>
+	<script type="text/javascript" src="/static/js/jquery.inview.js"></script>
+	<script type="text/javascript" src="/static/js/countUp.js"></script>
+	<script type="text/javascript" src="/static/js/main.js"></script>
+	<script src="/static/js/grid.js"></script>
+	<script>
+		$(function () {
+			Grid.init();
+		});
+	</script>
+</body>
+
+</html>
